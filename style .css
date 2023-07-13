@@ -1,0 +1,671 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --family-poppins: 'Poppins', sans-serif;
+  --text-default: #1A1A1A;
+  --weight-900: 900;
+  --weight-800: 800;
+  --weight-700: 700;
+  --weight-600: 600;
+  --weight-500: 500;
+  --weight-400: 400;
+  --weight-300: 300;
+  --weight-200: 200;
+  --weight-100: 100;
+  --app-theme: #5EB91E;
+  --white: #fff;
+  --black: #000;
+  --banner-bg: #F3F3F3;
+  --white-light: rgba(255,255,255,0.5);
+  --callout-border: #DFDFDF;
+  --inverse: invert(100%) sepia(4%) saturate(492%) hue-rotate(314deg) brightness(100%) contrast(84%);
+  --inverse-white: invert(100%) sepia(100%) saturate(0%) hue-rotate(336deg) brightness(112%) contrast(102%);
+  --sec-bg: #F6F6F6;
+  --sec-bg-dark: #ECECEC;
+  --radio-bg: #CCCCCC;
+  --form-control-border: rgba(40,43,48,0.3);
+  --portfolio-listing-bg: rgba(26,26,26,0.9);
+  --portfolio-listing-green-bg: rgba(94,185,30,0.9);
+  --red: #BF3E36;
+  --blog-sec-bg: #F1F1F1; }
+
+html.htmlSp {
+  margin: 0 !important; }
+
+body {
+  font-family: var(--family-poppins);
+  font-size: 1rem;
+  color: var(--text-default); }
+  @media screen and (min-width: 0px) and (max-width: 1399px) {
+    body {
+      font-size: 0.875rem; } }
+      
+
+body {
+    font-family: var(--family-poppins);
+    font-size: 1rem;
+    color: var(--text-default);
+}
+.btn.btn-app {
+    background-color: var(--app-theme);
+    border-color: var(--app-theme);
+    color: var(--white);
+}
+.btn.btn-rounded {
+    border-radius: 10rem;
+}
+@media screen and (min-width: 0px) and (max-width: 1399px){
+.btn {
+    font-size: 0.875rem;
+    padding: 0.7rem 1.5rem;
+}
+}
+.btn {
+    font-size: 1em;
+    font-weight: var(--weight-600);
+    padding: 1rem 2.5rem;
+    display: inline-flex;
+    gap: 0.875rem;
+    text-align: center;
+    justify-content: center;
+}
+.box-shadow {
+    box-shadow: 2px 8px 15px rgba(0, 0, 0, 0.161);
+}
+header {
+  padding: 1.5rem 0 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--banner-bg);
+  z-index: 10;
+  transition: all 0.3s ease-in-out;
+}
+@media screen and (min-width: 0px) and (max-width: 1399px){
+.mainBannerHolder .mainBannerSec .sliderHolder .bannerSliderSec {
+    min-height: 600px;
+}
+}
+.mainBannerHolder .mainBannerSec .sliderHolder .bannerSliderSec {
+  display: flex;
+  height: calc(100vh - (1.5rem + 74px));
+  min-height: 786px;
+  align-items: center;
+  gap: 3rem;
+}
+.mainBannerHolder .mainBannerSec .sliderHolder .bannerSliderSec .captionSec {
+  color: var(--text-default);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 631px;
+}
+
+
+.mainBannerHolder .mainBannerSec .sliderHolder .bannerSliderSec .captionSec h1 span {
+  color: var(--app-theme);
+}
+.mainBannerHolder .mainBannerSec .sliderHolder .bannerSliderSec .captionSec h1 {
+  font-size: 3.125em;
+  font-weight: var(--weight-700);
+  margin: 0;
+}
+.mainBannerHolder .mainBannerSec .sliderHolder .bannerSliderSec .captionSec p {
+  font-size: 1.5625em;
+  margin: 2rem 0;
+}
+
+.mainBannerHolder .mainBannerSec .sliderHolder .bannerSliderSec .bannerImgSec img {
+  max-width: 100%;
+}
+.mainBannerHolder .mainBannerSec .sliderHolder ul {
+  list-style-type: none;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+.mainBannerHolder {
+  padding-top: calc(1.5rem + 74px);
+  background: var(--banner-bg) url(bg-banner.png) center bottom no-repeat;
+  background-size: 100% auto;
+  overflow: hidden;
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px){
+.mainBannerHolder .mainBannerSec .sliderHolder .bannerShape > img {
+    width: 500px;
+}
+}
+.mainBannerHolder .mainBannerSec .sliderHolder .bannerShape {
+  position: absolute;
+  right: -2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.mainBannerHolder .mainBannerSec .sliderHolder {
+  position: relative;
+}
+@media (min-width: 1200px){
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1140px;
+}
+}
+@media screen and (min-width: 0px) and (max-width: 1399px){
+.homeServiceHolder {
+    padding: 3.5rem 0;
+    min-height: auto;
+}
+}
+.homeServiceHolder {
+  padding: 5.5rem 0;
+  min-height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--sec-bg);
+}
+.homeServiceHolder .homeServiceSec .subHeadingSec {
+  margin-bottom: 3rem;
+}
+.subHeadingSec h4 {
+  font-size: 1.5625em;
+  margin: 0;
+  padding: 0.5rem 0;
+  border-bottom: 3px solid var(--app-theme);
+  font-weight: var(--weight-400);
+}
+.headingSec {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-start;
+  width: 100%;
+}
+.homeServiceHolder .homeServiceSec .subHeadingSec {
+  margin-bottom: 3rem;
+}
+.homeServiceHolder .homeServiceSec .subHeadingSec {
+  margin-bottom: 3rem;
+}
+.headingSec h2 {
+  font-size: 3em;
+  font-weight: var(--weight-700);
+  margin: 0;
+}
+.headingSec h2 span {
+  color: var(--app-theme);
+}
+.headingSec p {
+  font-size: 1.5625em;
+  margin: 0;
+}
+p b, p strong {
+  font-weight: var(--weight-600);
+}
+.headingGrid {
+  display: flex;
+  gap: 2rem;
+}
+.homeServiceHolder.customServicesBlockSp .homeServiceSec .homeServiceCalloutSec {
+  gap: 0;
+}
+.homeServiceHolder .homeServiceSec .homeServiceCalloutSec {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+@media screen and (min-width: 992px){
+.homeServiceHolder.customServicesBlockSp .homeServiceSec .homeServiceCalloutSec .homeServiceCallout:nth-child(1), .homeServiceHolder.customServicesBlockSp .homeServiceSec .homeServiceCalloutSec .homeServiceCallout:nth-child(2), .homeServiceHolder.customServicesBlockSp .homeServiceSec .homeServiceCalloutSec .homeServiceCallout:nth-child(3) {
+    border-top-width: 1px;
+}
+}
+@media screen and (min-width: 992px){
+.homeServiceHolder.customServicesBlockSp .homeServiceSec .homeServiceCalloutSec .homeServiceCallout {
+    border-left: 0;
+    border-top-width: 0;
+}
+}
+.homeServiceHolder.customServicesBlockSp .homeServiceSec .homeServiceCalloutSec .homeServiceCallout {
+  border-radius: 0;
+  background: transparent;
+  padding: 2rem;
+}
+.homeServiceHolder .homeServiceSec .homeServiceCalloutSec .homeServiceCallout {
+  flex: 0 0 calc(33.3333% - 1rem);
+  max-width: calc(33.3333% - 1rem);
+  background: var(--white);
+  border: 1px solid var(--callout-border);
+  padding: 3rem 2rem 2rem 2rem;
+  border-radius: 20px;
+  display: flex;
+  gap: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+@media screen and (min-width: 768px){
+.homeServiceHolder .homeServiceSec .homeServiceCalloutSec .homeServiceCallout .serviceSecHead {
+    flex-direction: column;
+}
+}
+.homeServiceHolder .homeServiceSec .homeServiceCalloutSec .homeServiceCallout .serviceSecHead {
+  display: flex;
+  gap: 1.5rem;
+}
+@media screen and (min-width: 768px){
+.homeServiceHolder .homeServiceSec .homeServiceCalloutSec .homeServiceCallout .serviceSecHeadBody {
+    display: flex;
+}
+}
+.homeServiceHolder .homeServiceSec .homeServiceCalloutSec .homeServiceCallout h3 {
+  font-size: 1.5625em;
+  font-weight: var(--weight-600);
+}
+.br-disable > br {
+  display: none;
+}
+.homeServiceHolder .homeServiceSec .homeServiceCalloutSec .homeServiceCallout p {
+  font-size: 0.875em;
+}
+.homeServiceHolder .homeServiceSec .homeServiceCalloutSec .homeServiceCallout a {
+  transition: all 0.2s ease-in-out;
+}
+.text-default {
+  color: var(--text-default);
+  text-decoration: none;
+}
+@media screen and (min-width: 992px){
+.homeServiceHolder.customServicesBlockSp .homeServiceSec .homeServiceCalloutSec .homeServiceCallout:nth-child(3n+3) {
+    border-right: 0;
+}
+}
+.homeServiceHolder.customServicesBlockSp .homeServiceSec .homeServiceCalloutSec {
+  gap: 0;
+}
+.homeServiceHolder .homeServiceSec .homeServiceCalloutSec {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+@media screen and (min-width: 0px) and (max-width: 1399px){
+.homeServiceHolder {
+    padding: 3.5rem 0;
+    min-height: auto;
+}
+}
+.projectCostHolder {
+  position: relative;
+  background: var(--text-default);
+  overflow: hidden;
+}
+@media screen and (min-width: 0px) and (max-width: 1399px){
+.projectCostHolder .shape-left {
+    opacity: 0.2;
+}
+}
+.projectCostHolder .shape-left {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.projectCostHolder .shape-right {
+  position: absolute;
+  right: -6rem;
+  top: 0;
+}
+@media only screen and (min-width: 1260px){
+.container.small-container {
+    max-width: 1200px;
+}
+}
+.projectCostHolder .projectCostSec {
+  padding: 5.5rem 0;
+  position: relative;
+  z-index: 1;
+}
+.projectCostHolder .headingSec h2 {
+  color: var(--white);
+}
+.howItWorksHolder {
+  padding: 5.5rem 0;
+  min-height: 1000px;
+  background: var(--sec-bg);
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (min-width: 1500px){
+.container {
+    max-width: calc(var(--bs-gutter-x) * .5 + var(--bs-gutter-x) * .5 + 1400px);
+}
+}
+.howItWorksHolder .howItWorksSec {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+.howItWorksHolder .howItWorksSec .howItWorksLeftSec .subHeadingSec {
+  margin-bottom: 3rem;
+}
+.subHeadingSec h4 {
+  font-size: 1.5625em;
+  margin: 0;
+  padding: 0.5rem 0;
+  border-bottom: 3px solid var(--app-theme);
+  font-weight: var(--weight-400);
+}
+.btn.btn-app-dark {
+  background-color: var(--text-default);
+  border-color: var(--text-default);
+  color: var(--white);
+}
+.howItWorksHolder .howItWorksSec .howItWorksRightSec {
+  flex: 0 0 639px;
+  max-width: 639px;
+}
+.howItWorksHolder .howItWorksSec .howItWorksRightSec .howItWorksListingHolder {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  counter-reset: my-sec-counter;
+}
+.howItWorksHolder .howItWorksSec .howItWorksRightSec .howItWorksListingHolder > li {
+  position: relative;
+  display: flex;
+  transition: all 0.3s ease-in-out;
+}
+.howItWorksHolder .howItWorksSec .howItWorksRightSec .howItWorksListingHolder > li .howItWorksListingSec {
+  background: var(--white);
+  border: 1px solid var(--callout-border);
+  padding: 1rem;
+  border-radius: 20px;
+  display: flex;
+  gap: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  align-items: center;
+  z-index: 2;
+}
+.howItWorksHolder .howItWorksSec .howItWorksRightSec .howItWorksListingHolder > li:after {
+  counter-increment: my-sec-counter;
+  content: counter(my-sec-counter, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  font-weight: var(--weight-700);
+  font-size: 6.1875em;
+  top: -2.5rem;
+  z-index: 1;
+  line-height: 1;
+  opacity: 0.04;
+}
+.howItWorksHolder .howItWorksSec .howItWorksRightSec .howItWorksListingHolder {
+  list-style-type: none;
+}
+@media screen and (min-width: 768px){
+.howItWorksHolder .howItWorksSec .howItWorksRightSec .howItWorksListingHolder > li.active {
+    transition: all 0.3s ease-in-out;
+}
+}
+.designSampleSliderHolder {
+  background: var(--text-default);
+  color: var(--white);
+}
+.designSampleSliderHolder .designSampleSliderSec .designSampleSliderRightSec {
+  float: right;
+  background: var(--sec-bg);
+  padding-right: 2rem;
+  position: relative;
+}
+@media screen and (min-width: 0) and (max-width: 1499px){
+.designSampleSliderHolder .designSampleSliderSec .designSampleSliderRightSec {
+    padding-right: 0;
+}
+}
+.designSampleSliderHolder {
+  background: var(--text-default);
+  color: var(--white);
+}
+.designSampleSliderHolder .designSampleSliderSec .designSampleSliderRightSec .designSampleSliderContent {
+  border-radius: 100%;
+  position: relative;
+  padding: 3rem;
+  z-index: 2;
+  background-color: var(--white);
+  background-image: url(circle-shape.svg), url(circle-shape-x.svg);
+  background-position: center center, center center;
+  background-repeat: no-repeat, no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.designSampleSliderHolder .designSampleSliderSec .designSampleSliderRightSec .designSampleSliderContent .designSampleStructure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.designSampleSliderHolder .designSampleSliderSec .designSampleSliderRightSec .designSampleSliderContent .designSampleLaptopSec {
+  background: url(sample-laptop.png) center center no-repeat;
+  width: 524px;
+  height: 322px;
+  padding: 20px 71px 57px 64px;
+}
+.designSampleSliderHolder .designSampleSliderSec .designSampleSliderRightSec .designSampleSliderContent .designSampleLaptopSec .designSampleSlider ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.designSampleSliderHolder .designSampleSliderSec .designSampleSliderRightSec .slick-dots {
+  position: absolute;
+  right: calc(100% - 7rem);
+  bottom: 20px;
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+  z-index: 1;
+}
+.designSampleSliderHolder .designSampleSliderSec .designSampleSliderLeftSecSp {
+  display: flex;
+  align-items: center;
+}
+.designSampleSliderHolder .designSampleSliderSec .designSampleSliderLeftSec {
+  width: 100%;
+  max-width: 653px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+.separater {
+  background: #686868;
+  width: 101px;
+  height: 3px;
+  position: relative;
+}
+.separater:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 35%;
+  height: 100%;
+  background: var(--app-theme);
+}
+.transformationCompanyHolder {
+  padding: 2rem 0;
+  background: var(--sec-bg);
+}
+.transformationCompanyHolder .transformationCompanySec {
+  padding: 5.5rem 0;
+}
+@media only screen and (min-width: 1260px){
+.container.small-container {
+    max-width: 1200px;
+}
+}
+.transformationCompanyHolder .transformationCompanySec .separater {
+  width: 299px;
+}
+.technologiesHolder {
+  position: relative;
+  background: var(--text-default);
+  color: var(--white);
+  overflow: hidden;
+  padding: 6rem 0;
+}
+.technologiesHolder .shape-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.technologiesHolder .technologiesSec {
+  padding: 2rem 0;
+  position: relative;
+  z-index: 2;
+}
+.testimonialHolder {
+  padding: 6rem 0;
+  background: var(--sec-bg); 
+}
+.testimonialHolder .testimonialSec {
+  position: relative;
+  padding: 2rem 0;
+}
+.testimonialHolder .testimonialSec .testimonialSp {
+  position: relative;
+  z-index: 1;
+}
+.testimonialHolder .testimonialSec .shape-left {
+  position: absolute;
+  left: 0;
+  top: calc(50% + 4rem);
+  transform: translateY(-50%);
+}
+.testimonialHolder .testimonialSec .testimonialSliderSec {
+  margin-top: 3rem;
+  padding: 2rem 0;
+}
+.testimonialHolder .testimonialSec .testimonialSliderSec ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.testimonialHolder .testimonialSec .testimonialSliderSec ul.slick-slider .slick-list {
+  padding: 0 !important;
+}
+@media screen and (min-width: 1130px) and (max-width: 1399px){
+.designSampleSliderHolder .designSampleSliderSec {
+  min-height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+}
+.technologiesHolder .technologiesSec .technologiesContentHolder {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(3px);
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+}
+.technologiesHolder .technologiesSec .technologiesContentHolder ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.technologiesHolder .technologiesSec .technologiesContentHolder ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 1.5rem;
+  color: var(--white);
+  text-decoration: none;
+}
+@media screen and (min-width: 1200px){
+.technologiesHolder .technologiesSec .technologiesContentHolder ul li:nth-child(1), .technologiesHolder .technologiesSec .technologiesContentHolder ul li:nth-child(2), .technologiesHolder .technologiesSec .technologiesContentHolder ul li:nth-child(3), .technologiesHolder .technologiesSec .technologiesContentHolder ul li:nth-child(4) {
+    border-top: 0;
+}
+}
+.technologiesHolder .technologiesSec .technologiesContentHolder ul li {
+  border-right: 1px solid var(--app-theme);
+  border-top: 1px solid var(--app-theme);
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.technologiesHolder .technologiesSec .techTabHolder .tab-content {
+  width: 100%;
+}
+.technologiesHolder .technologiesSec .techTabHolder .nav-pills .nav-link.active {
+  color: var(--app-theme);
+  font-size: 1.875em;
+  font-weight: var(--weight-700);
+}
+.technologiesHolder .technologiesSec .techTabHolder .nav-pills .nav-link {
+  text-align: left;
+  padding: 0;
+  background: none;
+  color: #B2B2B2;
+  font-size: 1.5625em;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: 55px;
+}
+@media screen and (min-width: 0px) and (max-width: 1399px){
+.technologiesHolder {
+    padding: 3.5rem 0;
+}
+}
+.technologiesHolder .technologiesSec .techTabHolder{
+  padding-top: 4rem;
+    gap: 2rem;
+}
+@media screen and (min-width: 0px) and (max-width: 1399px){
+.technologiesHolder .technologiesSec .techTabHolder .nav-pills {
+    flex: 0 0 270px;
+    max-width: 270px;
+}
+}
+.designSampleSliderHolder .designSampleSliderSec .designSampleSliderRightSec .designSampleSliderContent .designSampleLaptopSec .designSampleSlider .sampleLaptopHolder img {
+  width: 100%;
+}
+.designSampleSliderHolder .designSampleSliderSec .designSampleSliderRightSec::before {
+  content: '';
+  width: calc(50% - 2rem);
+  height: 100%;
+  background: var(--text-default);
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px){
+.designSampleSliderHolder .designSampleSliderSec .designSampleSliderRightSec .designSampleSliderContent {
+    width: 750px;
+    height: 750px;
+    background-size: calc(750px - 3rem) calc(750px - 3rem), 68% auto;
+}
+}
+@media screen and (min-width: 0px) and (max-width: 1399px){
+.btn {
+    font-size: 0.875rem;
+    padding: 0.7rem 1.5rem;
+}
+}
+
+.headerFixed header {
+  padding: 0.5rem 0;
+  box-shadow: 2px 8px 15px rgba(0, 0, 0, 0.161);
+}
